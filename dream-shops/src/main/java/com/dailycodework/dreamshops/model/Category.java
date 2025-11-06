@@ -1,12 +1,15 @@
 package com.dailycodework.dreamshops.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Getter
 @Setter
@@ -14,16 +17,17 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 public class Category {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String name;
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String name;
 
 
-    @OneToMany(mappedBy = "category")
-    private List<Product> products;
+  @OneToMany(mappedBy = "category")
+  private List<Product> products;
 
-    public Category(String name) {
-        this.name = name;
-    }
+  public Category(String name) {
+    this.name = name;
+  }
 }

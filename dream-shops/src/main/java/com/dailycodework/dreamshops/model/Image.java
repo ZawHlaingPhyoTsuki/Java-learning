@@ -1,12 +1,17 @@
 package com.dailycodework.dreamshops.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Lob;
+import jakarta.persistence.ManyToOne;
+import java.sql.Blob;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.sql.Blob;
 
 @Getter
 @Setter
@@ -14,18 +19,19 @@ import java.sql.Blob;
 @NoArgsConstructor
 @Entity
 public class Image {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String fileName;
-    private String fileType;
 
-    @Lob
-    private Blob image;
-    private String downloadUrl;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String fileName;
+  private String fileType;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
+  @Lob
+  private Blob image;
+  private String downloadUrl;
+
+  @ManyToOne
+  @JoinColumn(name = "product_id")
+  private Product product;
 }
 
