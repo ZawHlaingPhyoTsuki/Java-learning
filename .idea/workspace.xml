@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Java-learning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/PostStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Tag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: entities added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Post.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +118,19 @@
       <option name="presentableId" value="Default" />
       <updated>1762415228888</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat[blog]: entities added">
+      <option name="closed" value="true" />
+      <created>1762442405405</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1762442405405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat[blog]: entities added" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: entities added" />
   </component>
 </project>
