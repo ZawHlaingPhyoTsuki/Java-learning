@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: core entities finished" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: create category repository">
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/CategoryRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,13 +142,31 @@
       <option name="project" value="LOCAL" />
       <updated>1762523461952</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat[blog]: create user repository">
+      <option name="closed" value="true" />
+      <created>1762523697265</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762523697265</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat[blog]: create category repository">
+      <option name="closed" value="true" />
+      <created>1762523780480</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1762523780480</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat[blog]: entities added" />
     <MESSAGE value="feat[blog]: Link Category and Post entities" />
     <MESSAGE value="feat[blog]: core entities finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: core entities finished" />
+    <MESSAGE value="feat[blog]: create user repository" />
+    <MESSAGE value="feat[blog]: create category repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: create category repository" />
   </component>
 </project>
