@@ -1,7 +1,7 @@
 package com.devtiro.blog.controllers;
 
 import com.devtiro.blog.domain.dtos.CategoryDto;
-import com.devtiro.blog.domain.entities.Category;
+import com.devtiro.blog.mappers.CategoryMapper;
 import com.devtiro.blog.services.CategoryService;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -16,10 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class CategoryController {
 
   private final CategoryService categoryService;
+  private final CategoryMapper categoryMapper;
 
   @GetMapping
   public ResponseEntity<List<CategoryDto>> listCategories() {
-    List<Category> categories = categoryService.listCategories();
-    return categories;
+    List<CategoryDto> categories = categoryService.listCategories()
+                                                  .stream()
+                                                  .map(categoryMapper::toDto)
+                                                  .toList();
+    return ResponseEntity.ok(categories);
   }
 }
