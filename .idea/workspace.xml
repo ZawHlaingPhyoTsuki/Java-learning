@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Fix typo">
-      <change afterPath="$PROJECT_DIR$/blog/src/test/resources/application.properties" afterDir="false" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Fix Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/ErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/CategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +60,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.BlogApplication.executor": "Run",
+    "JUnit.All in blog (1).executor": "Run",
     "JUnit.All in blog.executor": "Run",
     "JUnit.BlogApplicationTests.executor": "Run",
     "Maven.blog [clean,compile].executor": "Run",
@@ -77,7 +81,7 @@
       <recent name="com.devtiro.blog.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in blog (1)">
+  <component name="RunManager" selected="Application.BlogApplication">
     <configuration name="BlogApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.devtiro.blog.BlogApplication" />
       <module name="blog" />
@@ -124,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in blog (1)" />
-        <item itemvalue="JUnit.All in blog" />
         <item itemvalue="Application.BlogApplication" />
         <item itemvalue="JUnit.BlogApplicationTests" />
+        <item itemvalue="JUnit.All in blog (1)" />
+        <item itemvalue="JUnit.All in blog" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762614356867</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat[blog]: Fix Tests">
+      <option name="closed" value="true" />
+      <created>1762614708478</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1762614708478</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -251,6 +263,7 @@
     <MESSAGE value="feat[blog]: Create Category Endpoint" />
     <MESSAGE value="feat[blog]: Error Handling" />
     <MESSAGE value="feat[blog]: Fix typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Fix typo" />
+    <MESSAGE value="feat[blog]: Fix Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Fix Tests" />
   </component>
 </project>
