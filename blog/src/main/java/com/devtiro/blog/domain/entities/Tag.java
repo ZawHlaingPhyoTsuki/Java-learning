@@ -12,10 +12,12 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "tags")
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
 public class Tag {

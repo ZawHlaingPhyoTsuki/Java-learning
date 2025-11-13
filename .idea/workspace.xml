@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Add Authenticated Endpoint Pt2">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/security/JwtAuthenticationFilter.java" afterDir="false" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Add List Tags Endpoint">
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/TagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/TagResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/TagMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/security/BlogUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/security/BlogUserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/AuthenticateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/AuthenticateServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/TagRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,8 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt-api/0.11.5/jjwt-api-0.11.5-sources.jar!/io/jsonwebtoken/Jwts.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/6.5.6/spring-security-crypto-6.5.6-sources.jar!/org/springframework/security/crypto/factory/PasswordEncoderFactories.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/6.5.6/spring-security-crypto-6.5.6-sources.jar!/org/springframework/security/crypto/password/PasswordEncoder.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -292,8 +294,27 @@
       <option name="project" value="LOCAL" />
       <updated>1762847377480</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feat[blog]: Add JWT Authentication Filter">
+      <option name="closed" value="true" />
+      <created>1762865006730</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1762865006730</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat[blog]: entities added" />
@@ -313,6 +334,7 @@
     <MESSAGE value="feat[blog]: Add Spring Security" />
     <MESSAGE value="feat[blog]: Add Authenticated Endpoint Pt1" />
     <MESSAGE value="feat[blog]: Add Authenticated Endpoint Pt2" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Add Authenticated Endpoint Pt2" />
+    <MESSAGE value="feat[blog]: Add JWT Authentication Filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Add JWT Authentication Filter" />
   </component>
 </project>
