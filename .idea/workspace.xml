@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Add List Tags Endpoint">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/TagController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/TagResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/TagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/CreateTagsRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/TagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/entities/Tag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +302,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762865006730</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat[blog]: Add List Tags Endpoint">
+      <option name="closed" value="true" />
+      <created>1763009394314</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1763009394314</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -335,6 +343,7 @@
     <MESSAGE value="feat[blog]: Add Authenticated Endpoint Pt1" />
     <MESSAGE value="feat[blog]: Add Authenticated Endpoint Pt2" />
     <MESSAGE value="feat[blog]: Add JWT Authentication Filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Add JWT Authentication Filter" />
+    <MESSAGE value="feat[blog]: Add List Tags Endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Add List Tags Endpoint" />
   </component>
 </project>
