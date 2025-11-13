@@ -4,23 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Delete Tag Endpoint">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/AuthorDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/PostDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" afterDir="false" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: List Posts Endpoint">
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/ErrorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/TagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/TagController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/TagResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/TagDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/TagMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/PostRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -343,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763023470539</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat[blog]: List Posts Endpoint">
+      <option name="closed" value="true" />
+      <created>1763027894529</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1763027894529</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,6 +379,7 @@
     <MESSAGE value="feat[blog]: Add List Tags Endpoint" />
     <MESSAGE value="feat[blog]: Create Tag Endpoint" />
     <MESSAGE value="feat[blog]: Delete Tag Endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Delete Tag Endpoint" />
+    <MESSAGE value="feat[blog]: List Posts Endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: List Posts Endpoint" />
   </component>
 </project>

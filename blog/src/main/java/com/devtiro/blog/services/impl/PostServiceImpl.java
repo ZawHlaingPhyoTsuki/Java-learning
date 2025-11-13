@@ -4,6 +4,7 @@ import com.devtiro.blog.domain.PostStatus;
 import com.devtiro.blog.domain.entities.Category;
 import com.devtiro.blog.domain.entities.Post;
 import com.devtiro.blog.domain.entities.Tag;
+import com.devtiro.blog.domain.entities.User;
 import com.devtiro.blog.repositories.PostRepository;
 import com.devtiro.blog.services.CategoryService;
 import com.devtiro.blog.services.PostService;
@@ -45,6 +46,11 @@ public class PostServiceImpl implements PostService {
     }
 
     return postRepository.findAllByStatus(PostStatus.PUBLISHED);
+  }
+
+  @Override
+  public List<Post> getDraftPosts(User user) {
+    return postRepository.findAllByAuthorAndStatus(user, PostStatus.PUBLISHED);
   }
 
 
