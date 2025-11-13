@@ -1,6 +1,7 @@
 package com.devtiro.blog.controllers;
 
 import com.devtiro.blog.domain.dtos.ApiErrorResponse;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +19,10 @@ public class ErrorController {
   public ResponseEntity<ApiErrorResponse> handleException(Exception ex) {
     log.error("Caught exception", ex);
     ApiErrorResponse error = ApiErrorResponse.builder()
-                                             .status(HttpStatus.INTERNAL_SERVER_ERROR.value())
-                                             .message("An unexpected error occurred")
+                                             .status(
+                                                 HttpStatus.INTERNAL_SERVER_ERROR.value())
+                                             .message(
+                                                 "An unexpected error occurred")
                                              .build();
     return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
   }
@@ -28,16 +31,19 @@ public class ErrorController {
   public ResponseEntity<ApiErrorResponse> handleIllegalArgumentException(
       IllegalArgumentException ex) {
     ApiErrorResponse error = ApiErrorResponse.builder()
-                                             .status(HttpStatus.BAD_REQUEST.value())
+                                             .status(
+                                                 HttpStatus.BAD_REQUEST.value())
                                              .message(ex.getMessage())
                                              .build();
     return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
   }
 
   @ExceptionHandler(IllegalStateException.class)
-  public ResponseEntity<ApiErrorResponse> handleIllegalStateException(IllegalArgumentException ex) {
+  public ResponseEntity<ApiErrorResponse> handleIllegalStateException(
+      IllegalArgumentException ex) {
     ApiErrorResponse error = ApiErrorResponse.builder()
-                                             .status(HttpStatus.CONFLICT.value())
+                                             .status(
+                                                 HttpStatus.CONFLICT.value())
                                              .message(ex.getMessage())
                                              .build();
     return new ResponseEntity<>(error, HttpStatus.CONFLICT);
@@ -47,9 +53,21 @@ public class ErrorController {
   public ResponseEntity<ApiErrorResponse> handleBadCredentialsException(
       BadCredentialsException ex) {
     ApiErrorResponse error = ApiErrorResponse.builder()
-                                             .status(HttpStatus.UNAUTHORIZED.value())
+                                             .status(
+                                                 HttpStatus.UNAUTHORIZED.value())
                                              .message(ex.getMessage())
                                              .build();
     return new ResponseEntity<>(error, HttpStatus.UNAUTHORIZED);
+  }
+
+  @ExceptionHandler(EntityNotFoundException.class)
+  public ResponseEntity<ApiErrorResponse> handleEntityNotFoundException(
+      EntityNotFoundException ex) {
+    ApiErrorResponse error = ApiErrorResponse.builder()
+                                             .status(
+                                                 HttpStatus.NOT_FOUND.value())
+                                             .message(ex.getMessage())
+                                             .build();
+    return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
   }
 }

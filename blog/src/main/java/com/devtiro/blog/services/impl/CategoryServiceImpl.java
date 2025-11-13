@@ -3,6 +3,7 @@ package com.devtiro.blog.services.impl;
 import com.devtiro.blog.domain.entities.Category;
 import com.devtiro.blog.repositories.CategoryRepository;
 import com.devtiro.blog.services.CategoryService;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
@@ -25,7 +26,8 @@ public class CategoryServiceImpl implements CategoryService {
   @Transactional
   public Category createCategory(Category category) {
     if (categoryRepository.existsByNameIgnoreCase(category.getName())) {
-      throw new IllegalArgumentException("Category already exists with name: " + category.getName());
+      throw new IllegalArgumentException(
+          "Category already exists with name: " + category.getName());
     }
     return categoryRepository.save(category);
   }
@@ -35,9 +37,18 @@ public class CategoryServiceImpl implements CategoryService {
     Optional<Category> category = categoryRepository.findById(id);
     if (category.isPresent()) {
       if (!category.get().getPosts().isEmpty()) {
-        throw new IllegalStateException("Category has posts associated with it");
+        throw new IllegalStateException(
+            "Category has posts associated with it");
       }
       categoryRepository.deleteById(id);
     }
+  }
+
+  @Override
+  public Category getCategoryById(UUID id) {
+    return categoryRepository.findById(id)
+                             .orElseThrow(() -> new EntityNotFoundException(
+                                 "Category not found with id: " + id));
+
   }
 }

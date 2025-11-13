@@ -1,7 +1,7 @@
 package com.devtiro.blog.controllers;
 
 import com.devtiro.blog.domain.dtos.CreateTagsRequest;
-import com.devtiro.blog.domain.dtos.TagResponse;
+import com.devtiro.blog.domain.dtos.TagDto;
 import com.devtiro.blog.domain.entities.Tag;
 import com.devtiro.blog.mappers.TagMapper;
 import com.devtiro.blog.services.TagService;
@@ -27,25 +27,25 @@ public class TagController {
   private final TagMapper tagMapper;
 
   @GetMapping
-  public ResponseEntity<List<TagResponse>> getAllTags() {
+  public ResponseEntity<List<TagDto>> getAllTags() {
     List<Tag> tags = tagService.getAllTags();
-    List<TagResponse> tagResponses = tags.stream()
-                                         .map(tagMapper::toTagResponse)
-                                         .toList();
+    List<TagDto> tagRespons = tags.stream()
+                                  .map(tagMapper::toTagResponse)
+                                  .toList();
 
-    return ResponseEntity.ok(tagResponses);
+    return ResponseEntity.ok(tagRespons);
   }
 
   @PostMapping
-  public ResponseEntity<List<TagResponse>> createTags(
+  public ResponseEntity<List<TagDto>> createTags(
       @RequestBody CreateTagsRequest createTagsRequest) {
     List<Tag> savedTags = tagService.createTags(createTagsRequest.getNames());
-    List<TagResponse> createdTagResponses = savedTags.stream()
-                                                     .map(
+    List<TagDto> createdTagRespons = savedTags.stream()
+                                              .map(
                                                          tagMapper::toTagResponse)
-                                                     .toList();
+                                              .toList();
 
-    return new ResponseEntity<>(createdTagResponses, HttpStatus.CREATED);
+    return new ResponseEntity<>(createdTagRespons, HttpStatus.CREATED);
   }
 
   @DeleteMapping(path = "/{id}")
