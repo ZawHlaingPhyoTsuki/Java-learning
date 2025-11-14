@@ -1,8 +1,10 @@
 package com.devtiro.blog.mappers;
 
 import com.devtiro.blog.domain.CreatePostRequest;
+import com.devtiro.blog.domain.UpdatePostRequest;
 import com.devtiro.blog.domain.dtos.CreatePostRequestDto;
 import com.devtiro.blog.domain.dtos.PostDto;
+import com.devtiro.blog.domain.dtos.UpdatePostRequestDto;
 import com.devtiro.blog.domain.entities.Post;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -19,4 +21,7 @@ public interface PostMapper {
 
   CreatePostRequest toCreatePostRequest(
       CreatePostRequestDto createPostRequestDto);
+
+  UpdatePostRequest toUpdatePostRequest(
+      UpdatePostRequestDto updatePostRequestDto);
 }

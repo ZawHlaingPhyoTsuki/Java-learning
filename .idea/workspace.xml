@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Create Post Endpoint">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/CreatePostRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/CreatePostRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/UpdatePostRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/UpdatePostRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -352,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763028668420</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="feat[blog]: Create Post Endpoint">
+      <option name="closed" value="true" />
+      <created>1763125450665</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1763125450665</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,7 +396,8 @@
     <MESSAGE value="feat[blog]: Delete Tag Endpoint" />
     <MESSAGE value="feat[blog]: List Posts Endpoint" />
     <MESSAGE value="feat[blog]: List Draft Posts Endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: List Draft Posts Endpoint" />
+    <MESSAGE value="feat[blog]: Create Post Endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Create Post Endpoint" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
