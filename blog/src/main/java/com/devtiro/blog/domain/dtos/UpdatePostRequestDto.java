@@ -9,15 +9,14 @@ import java.util.Set;
 import java.util.UUID;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class UpdatePostRequestDto {
-
-  @NotNull(message = "Post ID is required")
-  private UUID id;
 
   @NotBlank(message = "Title is required")
   @Size(min = 3, max = 200,

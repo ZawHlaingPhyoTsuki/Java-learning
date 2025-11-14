@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Create Post Endpoint">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/UpdatePostRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/UpdatePostRequestDto.java" afterDir="false" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Update Post Endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/ErrorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/UpdatePostRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/UpdatePostRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/ApiErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/ApiErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/PostDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/PostDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/UpdatePostRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/UpdatePostRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" afterDir="false" />
@@ -358,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763125450665</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat[blog]: Update Post Endpoint">
+      <option name="closed" value="true" />
+      <created>1763129746153</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1763129746153</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,7 +408,8 @@
     <MESSAGE value="feat[blog]: List Posts Endpoint" />
     <MESSAGE value="feat[blog]: List Draft Posts Endpoint" />
     <MESSAGE value="feat[blog]: Create Post Endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Create Post Endpoint" />
+    <MESSAGE value="feat[blog]: Update Post Endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Update Post Endpoint" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

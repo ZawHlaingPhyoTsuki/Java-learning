@@ -31,6 +31,13 @@ public class PostServiceImpl implements PostService {
   private final TagService tagService;
 
   @Override
+  public Post getPostById(UUID id) {
+    return postRepository.findById(id)
+                         .orElseThrow(() -> new EntityNotFoundException(
+                             "Post does not exist with ID: " + id));
+  }
+
+  @Override
   @Transactional(readOnly = true)
   public List<Post> getAllPosts(UUID categoryId, UUID tagId) {
     if (categoryId != null && tagId != null) {
@@ -97,24 +104,26 @@ public class PostServiceImpl implements PostService {
     existingPost.setReadingTime(calculateReadingTime(postContent));
 
     UUID updatePostRequestCategoryId = updatePostRequest.getCategoryId();
-    if (!existingPost.getCategory()
-                     .getId()
-                     .equals(updatePostRequestCategoryId)) {
+    if (updatePostRequestCategoryId != null && !existingPost.getCategory()
+                                                            .getId()
+                                                            .equals(
+                                                                updatePostRequestCategoryId)) {
       Category newCategory = categoryService.getCategoryById(
           updatePostRequestCategoryId);
       existingPost.setCategory(newCategory);
     }
 
-    Set<UUID> existingTagIds = existingPost.getTags()
-                                           .stream()
-                                           .map(Tag::getId)
-                                           .collect(Collectors.toSet());
-
     Set<UUID> updatePostRequestTagIds = updatePostRequest.getTagIds();
+    if (updatePostRequestTagIds != null) {
+      Set<UUID> existingTagIds = existingPost.getTags()
+                                             .stream()
+                                             .map(Tag::getId)
+                                             .collect(Collectors.toSet());
 
-    if (!existingTagIds.equals(updatePostRequestTagIds)) {
-      List<Tag> newTags = tagService.getTagsByIds(updatePostRequestTagIds);
-      existingPost.setTags(new HashSet<>(newTags));
+      if (!existingTagIds.equals(updatePostRequestTagIds)) {
+        List<Tag> newTags = tagService.getTagsByIds(updatePostRequestTagIds);
+        existingPost.setTags(new HashSet<>(newTags));
+      }
     }
 
     return postRepository.save(existingPost);

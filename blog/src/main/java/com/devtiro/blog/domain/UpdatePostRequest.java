@@ -14,8 +14,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UpdatePostRequest {
 
-  private UUID id;
-
   private String title;
 
   private String content;
