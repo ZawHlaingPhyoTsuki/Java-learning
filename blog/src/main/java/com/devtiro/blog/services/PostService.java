@@ -1,5 +1,6 @@
 package com.devtiro.blog.services;
 
+import com.devtiro.blog.domain.CreatePostRequest;
 import com.devtiro.blog.domain.entities.Post;
 import com.devtiro.blog.domain.entities.User;
 import java.util.List;
@@ -11,4 +12,5 @@ public interface PostService {
 
   List<Post> getDraftPosts(User user);
 
+  Post createPost(User user, CreatePostRequest createPostRequest);
 }

@@ -1,5 +1,6 @@
 package com.devtiro.blog.services.impl;
 
+import com.devtiro.blog.domain.CreatePostRequest;
 import com.devtiro.blog.domain.PostStatus;
 import com.devtiro.blog.domain.entities.Category;
 import com.devtiro.blog.domain.entities.Post;
@@ -9,6 +10,7 @@ import com.devtiro.blog.repositories.PostRepository;
 import com.devtiro.blog.services.CategoryService;
 import com.devtiro.blog.services.PostService;
 import com.devtiro.blog.services.TagService;
+import java.util.HashSet;
 import java.util.List;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class PostServiceImpl implements PostService {
 
+  private static final int WORDS_PER_MINUTE = 200;
   private final PostRepository postRepository;
   private final CategoryService categoryService;
   private final TagService tagService;
@@ -50,7 +53,37 @@ public class PostServiceImpl implements PostService {
 
   @Override
   public List<Post> getDraftPosts(User user) {
-    return postRepository.findAllByAuthorAndStatus(user, PostStatus.PUBLISHED);
+    return postRepository.findAllByAuthorAndStatus(user, PostStatus.DRAFT);
+  }
+
+  @Override
+  @Transactional
+  public Post createPost(User user, CreatePostRequest createPostRequest) {
+    Post newPost = new Post();
+    newPost.setTitle(createPostRequest.getTitle());
+    newPost.setContent(createPostRequest.getContent());
+    newPost.setStatus(createPostRequest.getStatus());
+    newPost.setAuthor(user);
+    newPost.setReadingTime(
+        calculateReadingTime(createPostRequest.getContent()));
+
+    Category category = categoryService.getCategoryById(
+        createPostRequest.getCategoryId());
+    newPost.setCategory(category);
+
+    List<Tag> tags = tagService.getTagsByIds(createPostRequest.getTagIds());
+    newPost.setTags(new HashSet<>(tags));
+
+    return postRepository.save(newPost);
+  }
+
+  private Integer calculateReadingTime(String content) {
+    if (content == null || content.isEmpty()) {
+      return 0;
+    }
+
+    int wordCount = content.trim().split("\\s+").length;
+    return (int) Math.ceil((double) wordCount / WORDS_PER_MINUTE);
   }
 
 

@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: List Posts Endpoint">
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Create Post Endpoint">
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/CreatePostRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/domain/dtos/CreatePostRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/PostRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/repositories/PostRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/mappers/PostMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/TagService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/TagServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763027894529</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat[blog]: List Draft Posts Endpoint">
+      <option name="closed" value="true" />
+      <created>1763028668420</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1763028668420</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -380,6 +389,15 @@
     <MESSAGE value="feat[blog]: Create Tag Endpoint" />
     <MESSAGE value="feat[blog]: Delete Tag Endpoint" />
     <MESSAGE value="feat[blog]: List Posts Endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: List Posts Endpoint" />
+    <MESSAGE value="feat[blog]: List Draft Posts Endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: List Draft Posts Endpoint" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>
