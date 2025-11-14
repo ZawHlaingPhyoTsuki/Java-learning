@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Get Post Endpoint &amp; add ValidationErrorhandler">
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/controllers/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/main/java/com/devtiro/blog/services/impl/PostServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="22640545-1cda-4f67-8dc5-0187a246aa9f" name="Changes" comment="feat[blog]: Delete Post Endpoint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -370,7 +366,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763134952210</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat[blog]: Delete Post Endpoint">
+      <option name="closed" value="true" />
+      <created>1763135890683</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1763135890683</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,7 +389,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat[blog]: Link Category and Post entities" />
     <MESSAGE value="feat[blog]: core entities finished" />
     <MESSAGE value="feat[blog]: create user repository" />
     <MESSAGE value="feat[blog]: create category repository" />
@@ -410,7 +413,8 @@
     <MESSAGE value="feat[blog]: Create Post Endpoint" />
     <MESSAGE value="feat[blog]: Update Post Endpoint" />
     <MESSAGE value="feat[blog]: Get Post Endpoint &amp; add ValidationErrorhandler" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Get Post Endpoint &amp; add ValidationErrorhandler" />
+    <MESSAGE value="feat[blog]: Delete Post Endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat[blog]: Delete Post Endpoint" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
